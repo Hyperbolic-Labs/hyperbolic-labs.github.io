@@ -11,7 +11,7 @@ title:            Caleb Washburn
 tagline:          'Personal Portfolio'
 description:      'Software Engineering, C++ design patterns, embedded firmware, hardware design, serial project starter'
 url:              http://github.com/hyperbolic-labs/
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'Caleb Washburn'
@@ -24,7 +24,7 @@ mathjax: true
 # Custom vars
 version:          2.1.0
 
-github:
+github:           http://github.com/hyperbolic-labs/
   repo:           https://github.com/hyperbolic-labs/telesonde
 
 plugins:
