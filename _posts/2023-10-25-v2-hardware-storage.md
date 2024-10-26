@@ -1,0 +1,6 @@
+---
+layout: post
+title: V2 Hardware - Storage
+---
+
+On the ESP32 platform, storing nonvolatile settings is easily managed with the Preferences library, which provides an abstraction layer for storing variables in flash memory. The STM32F411 processor unfortunately doesn't have enough flash memory to implement nonvolatile storage with adequate wear leveling. This problem is easily solved by adding an external I2C EEPROM, which are very cheap. I went with a M24C64 EEPROM with 8Kbyte capacity, which should be plenty for what I will need. The M24C series has a write endurance of 4 million cyles which means I don't have to worry about implementing a wear leveling algorithm, another plus. Version 1 of the HAB tracker had an SD card connector, which served dual purpose as a storage medium for images and datalogs. Since this version won't be integrating a camera, inexpensive NOR flash is the better choice. It's more reliable, consumes significantly less power, and has a smaller PCB footprint. W25Q64JF from Winbond has 8Mbyte capacity, which works out to just over 9 hours of log data, assuming a 256 byte record once per second.

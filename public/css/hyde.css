@@ -240,11 +240,20 @@ a.sidebar-nav-item:focus {
   color: #aa759f;
 }
 
-/* Brown */
+/* Brown
 .theme-base-0f .sidebar {
   background-color: #8f5536;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
-}
+} */
+
+/* Navy */
+.theme-base-0f .sidebar {
+    background-color: #060f24
+  }
+  .theme-base-0f .content a,
+  .theme-base-0f .related-posts li a:hover {
+    color: #8f5536;
+  }
