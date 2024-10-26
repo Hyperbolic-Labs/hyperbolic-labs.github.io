@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         kramdown
-highlighter:      redcarpet
+highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
@@ -9,15 +9,17 @@ permalink:        pretty
 # Setup
 title:            Caleb Washburn
 tagline:          'Personal Portfolio'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+description:      'Software Engineering, C++ design patterns, embedded firmware, hardware design, serial project starter'
+url:              http://github.com/hyperbolic-labs/
 baseurl:          /
 
 author:
   name:           'Caleb Washburn'
   # url:            https://twitter.com/mdo
 
-paginate:         5
+paginate:         1
+
+mathjax: true
 
 # Custom vars
 version:          2.1.0
